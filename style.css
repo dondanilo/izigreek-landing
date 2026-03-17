@@ -481,3 +481,128 @@ body {
   .section-title { font-size: 28px; }
   .section-sub { font-size: 16px; }
 }
+
+/* ============================================================ FEATURES */
+.features { background: var(--bg); }
+
+.features-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 24px; margin-top: 56px;
+}
+.feature-card {
+  background: var(--white); border-radius: var(--radius-lg);
+  padding: 32px 28px; border: 2px solid var(--gray);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+
+.feature-icon {
+  width: 56px; height: 56px; border-radius: 16px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 28px; margin-bottom: 20px;
+}
+.feature-title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px; font-weight: 900;
+  color: var(--text); margin-bottom: 10px;
+}
+.feature-text {
+  font-size: 14px; line-height: 1.7; color: var(--text-light);
+}
+
+/* ============================================================ HOW IT WORKS */
+.how { background: var(--white); }
+
+.how-inner {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 80px; align-items: center;
+}
+.how-tag { background: rgba(206,130,255,0.12); color: #8B2FC9; }
+
+.steps { display: flex; flex-direction: column; gap: 0; margin-top: 8px; }
+
+.step {
+  display: flex; align-items: flex-start; gap: 20px;
+  padding: 8px 0;
+}
+.step-num {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--green); color: white;
+  font-family: 'Nunito', sans-serif; font-size: 20px; font-weight: 900;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; box-shadow: 0 3px 0 var(--green-dark);
+}
+.step-content { padding-top: 8px; }
+.step-title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px; font-weight: 900; color: var(--text);
+  margin-bottom: 6px;
+}
+.step-desc { font-size: 15px; line-height: 1.6; color: var(--text-light); }
+.step-line {
+  width: 2px; height: 32px; background: var(--gray);
+  margin-left: 21px;
+}
+
+/* ============================================================ HOW VISUAL CARD */
+.how-visual { display: flex; justify-content: center; }
+
+.how-card {
+  background: var(--white); border-radius: var(--radius-lg);
+  border: 2px solid var(--gray); box-shadow: var(--shadow-lg);
+  padding: 28px; width: 100%; max-width: 380px;
+}
+.how-card-header {
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 24px;
+}
+.how-card-icon { font-size: 24px; }
+.how-card-title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px; font-weight: 900; color: var(--text);
+}
+.how-stats { display: flex; flex-direction: column; gap: 14px; margin-bottom: 24px; }
+.how-stat-row {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 14px; color: var(--text-light); font-weight: 600;
+}
+.how-stat-val {
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px; font-weight: 900; color: var(--text);
+}
+.how-level { margin-bottom: 24px; }
+.how-level-label {
+  display: flex; justify-content: space-between;
+  font-size: 13px; font-weight: 700; color: var(--text-light);
+  margin-bottom: 8px;
+}
+.how-level-bar {
+  height: 10px; background: var(--gray); border-radius: 5px; overflow: hidden;
+}
+.how-level-fill {
+  height: 100%; background: linear-gradient(90deg, var(--green), #00C851);
+  border-radius: 5px;
+}
+.how-achievements {
+  display: flex; gap: 8px; flex-wrap: wrap;
+}
+.how-ach {
+  width: 40px; height: 40px; border-radius: 12px;
+  background: var(--green-light); border: 2px solid #C3F0A0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+}
+.how-ach-locked {
+  background: var(--bg); border-color: var(--gray);
+  filter: grayscale(1); opacity: 0.4;
+}
+
+/* ============================================================ RESPONSIVE */
+@media (max-width: 900px) {
+  .features-grid { grid-template-columns: 1fr 1fr; }
+  .how-inner { grid-template-columns: 1fr; gap: 48px; }
+  .how-visual { order: -1; }
+}
+@media (max-width: 480px) {
+  .features-grid { grid-template-columns: 1fr; }
+}
