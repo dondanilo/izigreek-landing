@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IziGreek — учи греческий легко. Для русскоязычных жителей Кипра и Греции.">
+  <title>IziGreek — Греческий без стресса</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== NAV ==================== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#">
+        <span class="logo-icon">🇬🇷</span>
+        <span class="logo-text">IziGreek</span>
+      </a>
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="ru" onclick="setLang('ru')">RU</button>
+          <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        </div>
+        <a href="https://cabinet.izigreek.com" class="nav-cta" data-ru="Попробовать бесплатно" data-en="Try for free">Попробовать бесплатно</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span data-ru="Специально для жителей Кипра и Греции" data-en="Made for Cyprus & Greece residents">Специально для жителей Кипра и Греции</span>
+        </div>
+        <h1 class="hero-title">
+          <span data-ru="Греческий —" data-en="Greek isn't">Греческий —</span>
+          <br>
+          <span class="hero-title-accent" data-ru="не сложный." data-en="hard.">не сложный.</span>
+          <br>
+          <span data-ru="Просто учи с нами." data-en="Just learn with us.">Просто учи с нами.</span>
+        </h1>
+        <p class="hero-sub" data-ru="IziGreek помогает русскоязычным жителям Кипра освоить греческий легко — через реальные диалоги, сценарии из жизни и умное повторение." data-en="IziGreek helps Russian-speaking residents of Cyprus master Greek easily — through real dialogues, life scenarios and smart repetition.">
+          IziGreek помогает русскоязычным жителям Кипра освоить греческий легко — через реальные диалоги, сценарии из жизни и умное повторение.
+        </p>
+        <div class="hero-actions">
+          <a href="https://cabinet.izigreek.com" class="btn-hero-primary">
+            <span data-ru="Начать бесплатно — 7 дней" data-en="Start free — 7 days">Начать бесплатно — 7 дней</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <p class="hero-note" data-ru="Карта не нужна · Отмена в любой момент" data-en="No card required · Cancel anytime">Карта не нужна · Отмена в любой момент</p>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-num">45+</span>
+            <span class="hero-stat-lbl" data-ru="глаголов" data-en="verbs">глаголов</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">20+</span>
+            <span class="hero-stat-lbl" data-ru="сценариев" data-en="scenarios">сценариев</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">100+</span>
+            <span class="hero-stat-lbl" data-ru="живых фраз" data-en="real phrases">живых фраз</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <div class="app-preview">
+              <div class="preview-header">
+                <div class="preview-hearts">❤️❤️❤️</div>
+                <div class="preview-progress"><div class="preview-progress-fill"></div></div>
+                <div class="preview-xp">⚡12</div>
+              </div>
+              <div class="preview-label">ПЕРЕВЕДИ ФРАЗУ</div>
+              <div class="preview-question">Πού είναι το φαρμακείο;</div>
+              <div class="preview-transcription">Пу инэ то фармакио;</div>
+              <div class="preview-options">
+                <div class="preview-option correct">Где находится аптека?</div>
+                <div class="preview-option">Когда закроется магазин?</div>
+                <div class="preview-option">Сколько это стоит?</div>
+              </div>
+            </div>
+          </div>
+          <div class="phone-notch"></div>
+        </div>
+        <div class="float-card float-card-1">
+          <span class="float-card-icon">🔥</span>
+          <div>
+            <div class="float-card-title" data-ru="7 дней подряд" data-en="7 day streak">7 дней подряд</div>
+            <div class="float-card-sub" data-ru="Отличный прогресс!" data-en="Great progress!">Отличный прогресс!</div>
+          </div>
+        </div>
+        <div class="float-card float-card-2">
+          <span class="float-card-icon">⚡</span>
+          <div>
+            <div class="float-card-title">+350 XP</div>
+            <div class="float-card-sub" data-ru="за эту неделю" data-en="this week">за эту неделю</div>
+          </div>
+        </div>
+        <div class="float-card float-card-3">
+          <span class="float-card-icon">🏆</span>
+          <div>
+            <div class="float-card-title" data-ru="Достижение!" data-en="Achievement!">Достижение!</div>
+            <div class="float-card-sub" data-ru="Первый разговор" data-en="First conversation">Первый разговор</div>
+          </div>
+        </div>
+        <div class="hero-blob"></div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0 40C240 80 480 0 720 40C960 80 1200 0 1440 40V80H0V40Z" fill="#F8F9FA"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ==================== LOGOS / SOCIAL PROOF BAR ==================== -->
+  <section class="proof-bar">
+    <div class="proof-bar-inner">
+      <p class="proof-bar-text" data-ru="Нам доверяют жители Кипра и Греции" data-en="Trusted by residents of Cyprus and Greece">Нам доверяют жители Кипра и Греции</p>
+      <div class="proof-flags">
+        <span class="proof-flag">🇨🇾 <span data-ru="Кипр" data-en="Cyprus">Кипр</span></span>
+        <span class="proof-flag">🇬🇷 <span data-ru="Греция" data-en="Greece">Греция</span></span>
+        <span class="proof-flag">🌍 <span data-ru="Диаспора" data-en="Diaspora">Диаспора</span></span>
+      </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
