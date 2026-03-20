@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      font-family: -apple-system, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    /* Background decoration */
+    .blob1 {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(99,102,241,0.3) 0%, transparent 70%);
+      top: -100px;
+      right: -50px;
+      border-radius: 50%;
+    }
+    .blob2 {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(34,197,94,0.2) 0%, transparent 70%);
+      bottom: -100px;
+      left: 100px;
+      border-radius: 50%;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      gap: 80px;
+      padding: 60px;
+      width: 100%;
+    }
+
+    .left {
+      flex: 1;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 100px;
+      padding: 8px 16px;
+      color: rgba(255,255,255,0.8);
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      background: #22c55e;
+      border-radius: 50%;
+    }
+
+    h1 {
+      color: white;
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    h1 span {
+      color: #818cf8;
+    }
+
+    p {
+      color: rgba(255,255,255,0.7);
+      font-size: 22px;
+      line-height: 1.5;
+      margin-bottom: 32px;
+      max-width: 480px;
+    }
+
+    .pills {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .pill {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 100px;
+      padding: 8px 18px;
+      color: white;
+      font-size: 16px;
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      min-width: 300px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 16px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .card-icon {
+      font-size: 32px;
+      width: 48px;
+      text-align: center;
+    }
+
+    .card-text {
+      color: white;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .card-sub {
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+      margin-top: 2px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 36px;
+      left: 60px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white;
+      font-size: 28px;
+      font-weight: 800;
+      z-index: 2;
+    }
+
+    .trial-badge {
+      position: absolute;
+      top: 36px;
+      right: 60px;
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 10px 20px;
+      border-radius: 100px;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="blob1"></div>
+  <div class="blob2"></div>
+
+  <div class="logo">🇬🇷 IziGreek</div>
+  <div class="trial-badge">7 дней бесплатно</div>
+
+  <div class="content">
+    <div class="left">
+      <div class="badge">
+        <div class="badge-dot"></div>
+        Для жителей Кипра и Греции
+      </div>
+      <h1>Греческий —<br><span>не сложный.</span></h1>
+      <p>Реальные диалоги, сценарии из кипрской жизни и умное повторение. Всего 10 минут в день.</p>
+      <div class="pills">
+        <div class="pill">🏦 Банк</div>
+        <div class="pill">💊 Аптека</div>
+        <div class="pill">🏛️ ΚΕΠ</div>
+        <div class="pill">🚕 Такси</div>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="card">
+        <div class="card-icon">🧠</div>
+        <div class="card-text">
+          <div class="card-title">Умное повторение SRS</div>
+          <div class="card-sub">Учи то, что нужно именно сегодня</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔥</div>
+        <div class="card-text">
+          <div class="card-title">Стрики и достижения</div>
+          <div class="card-sub">Учёба как игра — не останавливаешься</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <div class="card-text">
+          <div class="card-title">Работает офлайн</div>
+          <div class="card-sub">PWA — устанавливается на телефон</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -4,13 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Блог IziGreek — советы по изучению греческого языка</title>
-  <meta name="description" content="Статьи о греческом языке для русскоязычных жителей Кипра и Греции: фразы, советы, разборы ситуаций.">
+  <meta name="description" content="Статьи о греческом языке для русскоязычных жителей Кипра и Греции: алфавит, грамматика, фразы, традиции, советы по обучению.">
   <link rel="canonical" href="https://izigreek.com/blog/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://izigreek.com/blog/">
   <meta property="og:title" content="Блог IziGreek — советы по изучению греческого языка">
   <meta property="og:description" content="Статьи о греческом языке для русскоязычных жителей Кипра и Греции.">
   <meta property="og:image" content="https://izigreek.com/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Блог IziGreek",
+    "url": "https://izigreek.com/blog/",
+    "description": "Статьи о греческом языке для русскоязычных жителей Кипра и Греции",
+    "publisher": { "@type": "Organization", "name": "IziGreek", "url": "https://izigreek.com" }
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -19,30 +29,33 @@
     body { font-family: Inter, sans-serif; color: #333; background: #fff; }
     a { color: inherit; text-decoration: none; }
 
-    /* NAV */
     .nav { background: white; border-bottom: 1px solid #e5e5e5; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
     .nav-logo { font-family: Nunito, sans-serif; font-weight: 900; font-size: 22px; color: #1a1a1a; }
     .nav-cta { background: #58CC02; color: white; padding: 10px 20px; border-radius: 50px; font-family: Nunito, sans-serif; font-weight: 700; font-size: 15px; }
 
-    /* HERO */
     .hero { background: linear-gradient(135deg, #f0fce8 0%, #e8f5e9 100%); padding: 64px 24px 48px; text-align: center; }
     .hero h1 { font-family: Nunito, sans-serif; font-size: 42px; font-weight: 900; color: #1a1a1a; margin-bottom: 16px; }
     .hero p { font-size: 18px; color: #555; max-width: 560px; margin: 0 auto; line-height: 1.6; }
 
-    /* ARTICLES */
-    .articles { max-width: 860px; margin: 0 auto; padding: 64px 24px; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 32px; }
-    .card { border: 1px solid #e5e5e5; border-radius: 16px; overflow: hidden; transition: transform .2s, box-shadow .2s; }
-    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,.1); }
-    .card-img { background: linear-gradient(135deg, #f0fce8, #d4f5b0); height: 140px; display: flex; align-items: center; justify-content: center; font-size: 56px; }
-    .card-body { padding: 24px; }
-    .card-tag { font-size: 12px; font-weight: 700; color: #58CC02; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 8px; }
-    .card-title { font-family: Nunito, sans-serif; font-size: 18px; font-weight: 800; color: #1a1a1a; line-height: 1.35; margin-bottom: 10px; }
-    .card-desc { font-size: 14px; color: #666; line-height: 1.6; margin-bottom: 16px; }
-    .card-link { font-family: Nunito, sans-serif; font-size: 14px; font-weight: 700; color: #58CC02; }
+    .section-title { font-family: Nunito, sans-serif; font-size: 22px; font-weight: 800; color: #1a1a1a; padding: 0 24px; max-width: 908px; margin: 48px auto 24px; }
 
-    /* FOOTER */
+    .articles { max-width: 908px; margin: 0 auto; padding: 0 24px 64px; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; }
+    .card { border: 1px solid #e5e5e5; border-radius: 16px; overflow: hidden; transition: transform .2s, box-shadow .2s; display: flex; flex-direction: column; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,.1); }
+    .card-img { background: linear-gradient(135deg, #f0fce8, #d4f5b0); height: 120px; display: flex; align-items: center; justify-content: center; font-size: 48px; }
+    .card-body { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+    .card-tag { font-size: 11px; font-weight: 700; color: #58CC02; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 6px; }
+    .card-title { font-family: Nunito, sans-serif; font-size: 16px; font-weight: 800; color: #1a1a1a; line-height: 1.35; margin-bottom: 8px; flex: 1; }
+    .card-desc { font-size: 13px; color: #666; line-height: 1.55; margin-bottom: 14px; }
+    .card-link { font-family: Nunito, sans-serif; font-size: 13px; font-weight: 700; color: #58CC02; }
+
     .footer { background: #1a1a1a; color: #aaa; text-align: center; padding: 32px 24px; font-size: 14px; }
     .footer a { color: #58CC02; }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 28px; }
+      .articles { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -57,13 +70,57 @@
   <p>Советы, фразы и гиды по греческому языку — специально для русскоязычных жителей Кипра и Греции</p>
 </section>
 
+<div class="section-title">С чего начать</div>
+<div class="articles">
+  <a href="/blog/grecheskiy-alfavit.html" class="card">
+    <div class="card-img">🔤</div>
+    <div class="card-body">
+      <div class="card-tag">Основы</div>
+      <div class="card-title">Греческий алфавит за 1 час: таблица с русской транскрипцией</div>
+      <div class="card-desc">Какие буквы похожи на русские, какие обманывают, и как запомнить все 24 за один вечер.</div>
+      <div class="card-link">Читать →</div>
+    </div>
+  </a>
+
+  <a href="/blog/kak-govorit-po-grecheski.html" class="card">
+    <div class="card-img">📚</div>
+    <div class="card-body">
+      <div class="card-tag">С нуля</div>
+      <div class="card-title">Как научиться говорить по-гречески с нуля: пошаговый план</div>
+      <div class="card-desc">Пошаговый план изучения — сколько времени нужно и как не бросить через неделю.</div>
+      <div class="card-link">Читать →</div>
+    </div>
+  </a>
+
+  <a href="/blog/grecheskiy-za-30-dney.html" class="card">
+    <div class="card-img">📅</div>
+    <div class="card-body">
+      <div class="card-tag">Челлендж</div>
+      <div class="card-title">Греческий за 30 дней: реальный план с нуля до первого разговора</div>
+      <div class="card-desc">Конкретный 30-дневный план: что учить каждую неделю и как дойти до результата.</div>
+      <div class="card-link">Читать →</div>
+    </div>
+  </a>
+
+  <a href="/blog/intervalnoe-povtorenie-grecheskiy.html" class="card">
+    <div class="card-img">🧠</div>
+    <div class="card-body">
+      <div class="card-tag">Методика</div>
+      <div class="card-title">Интервальное повторение: как запоминать греческие слова навсегда</div>
+      <div class="card-desc">Что такое SRS и кривая Эббингауза — наука о памяти простыми словами.</div>
+      <div class="card-link">Читать →</div>
+    </div>
+  </a>
+</div>
+
+<div class="section-title">Жизнь на Кипре</div>
 <div class="articles">
   <a href="/blog/grecheskiy-na-kipre.html" class="card">
     <div class="card-img">🇨🇾</div>
     <div class="card-body">
       <div class="card-tag">Гид</div>
       <div class="card-title">Как выучить греческий язык на Кипре: реальный опыт русскоязычных</div>
-      <div class="card-desc">Почему сложно, с чего начать, сколько времени нужно и какие ошибки совершают все новички.</div>
+      <div class="card-desc">Почему сложно, с чего начать и какие ошибки совершают все новички.</div>
       <div class="card-link">Читать →</div>
     </div>
   </a>
@@ -78,19 +135,84 @@
     </div>
   </a>
 
-  <a href="/blog/kak-govorit-po-grecheski.html" class="card">
-    <div class="card-img">📚</div>
+  <a href="/blog/kiprskoye-narechiye.html" class="card">
+    <div class="card-img">🗣️</div>
     <div class="card-body">
-      <div class="card-tag">С нуля</div>
-      <div class="card-title">Как научиться говорить по-гречески с нуля: пошаговый план</div>
-      <div class="card-desc">Пошаговый план изучения греческого — сколько времени нужно и как не бросить через неделю.</div>
+      <div class="card-tag">Диалект</div>
+      <div class="card-title">Кипрский диалект vs стандартный греческий: главные отличия</div>
+      <div class="card-desc">Почему киприоты говорят иначе — и что это значит для тех, кто учит греческий.</div>
+      <div class="card-link">Читать →</div>
+    </div>
+  </a>
+
+  <a href="/blog/grecheskiye-prazdniki-frazy.html" class="card">
+    <div class="card-img">🎉</div>
+    <div class="card-body">
+      <div class="card-tag">Культура</div>
+      <div class="card-title">Греческие праздники и традиции: что говорить и как себя вести</div>
+      <div class="card-desc">Как поздравить грека с Пасхой, Рождеством и именинами. Таблица именин.</div>
+      <div class="card-link">Читать →</div>
+    </div>
+  </a>
+
+  <a href="/blog/grecheskiy-dlya-detey.html" class="card">
+    <div class="card-img">👨‍👩‍👧</div>
+    <div class="card-body">
+      <div class="card-tag">Семья</div>
+      <div class="card-title">Греческий для детей на Кипре: как помочь ребёнку освоить язык</div>
+      <div class="card-desc">Советы для русскоязычных родителей: игры, мультики и реальные методики.</div>
+      <div class="card-link">Читать →</div>
+    </div>
+  </a>
+
+  <a href="/blog/grecheskiy-na-rabote.html" class="card">
+    <div class="card-img">💼</div>
+    <div class="card-body">
+      <div class="card-tag">Карьера</div>
+      <div class="card-title">Греческий на работе: фразы для офиса и собеседования</div>
+      <div class="card-desc">Деловой греческий: собеседование, общение с коллегами, деловые письма.</div>
+      <div class="card-link">Читать →</div>
+    </div>
+  </a>
+</div>
+
+<div class="section-title">Грамматика и словарь</div>
+<div class="articles">
+  <a href="/blog/grecheskaya-grammatika-dlya-nachinayuschikh.html" class="card">
+    <div class="card-img">📖</div>
+    <div class="card-body">
+      <div class="card-tag">Грамматика</div>
+      <div class="card-title">Греческая грамматика для русских: что общего и в чём отличия</div>
+      <div class="card-desc">Падежи, артикли, глаголы — разбираем греческую грамматику с точки зрения русскоязычного.</div>
+      <div class="card-link">Читать →</div>
+    </div>
+  </a>
+
+  <a href="/blog/grecheskiy-chislitelnyye.html" class="card">
+    <div class="card-img">🔢</div>
+    <div class="card-body">
+      <div class="card-tag">Словарь</div>
+      <div class="card-title">Числа на греческом: от 1 до 1000 с произношением</div>
+      <div class="card-desc">Как считать по-гречески и что говорить в магазине, на рынке и в такси.</div>
+      <div class="card-link">Читать →</div>
+    </div>
+  </a>
+
+  <a href="/blog/grecheskiye-glagoly.html" class="card">
+    <div class="card-img">⚡</div>
+    <div class="card-body">
+      <div class="card-tag">Словарь</div>
+      <div class="card-title">50 самых нужных греческих глаголов с примерами</div>
+      <div class="card-desc">Топ-50 глаголов для повседневной жизни на Кипре — с транскрипцией и примерами.</div>
       <div class="card-link">Читать →</div>
     </div>
   </a>
 </div>
 
 <footer class="footer">
-  © 2026 <a href="https://izigreek.com">IziGreek</a> — Греческий язык для русскоязычных жителей Кипра
+  <p style="margin-bottom:12px;"><a href="https://izigreek.com" style="color:#58CC02;font-family:Nunito,sans-serif;font-weight:900;font-size:18px;">🇬🇷 IziGreek</a></p>
+  <p>© 2026 IziGreek — Греческий язык для русскоязычных жителей Кипра и Греции</p>
+  <p style="margin-top:12px;"><a href="https://izigreek.com" style="color:#aaa;">Главная</a></p>
 </footer>
 
 </body>
