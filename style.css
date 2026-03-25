@@ -887,7 +887,7 @@ body {
   bottom: 20px;
   right: -30px;
   width: 130px;
-  filter: drop-shadow(0 8px 20px rgba(28,176,246,0.3));
+  mix-blend-mode: multiply;
   animation: mascot-float 3.5s ease-in-out infinite;
   pointer-events: none;
   z-index: 3;
@@ -930,7 +930,7 @@ body {
   right: 40px;
   bottom: 0;
   width: 160px;
-  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.25));
+  mix-blend-mode: multiply;
   animation: mascot-float 3.5s ease-in-out infinite;
   animation-delay: 0.4s;
   pointer-events: none;
