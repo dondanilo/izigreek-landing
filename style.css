@@ -52,6 +52,7 @@ body {
   text-decoration: none;
 }
 .logo-icon { font-size: 28px; }
+.logo-mascot { width: 36px; height: 36px; object-fit: contain; mix-blend-mode: multiply; }
 .logo-text {
   font-family: 'Nunito', sans-serif;
   font-size: 22px; font-weight: 900;
@@ -833,6 +834,7 @@ body {
 }
 .footer-brand { max-width: 280px; }
 .footer-brand .logo-text { color: white; }
+.footer-brand .logo-mascot { mix-blend-mode: screen; }
 .footer-tagline {
   font-size: 14px; color: rgba(255,255,255,0.4);
   margin-top: 12px; line-height: 1.6;
