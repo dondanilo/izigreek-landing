@@ -877,50 +877,47 @@ body {
 
 /* ============================================================ MASCOT */
 @keyframes mascot-float {
-  0%, 100% { transform: translateY(0) rotate(-3deg); }
-  50% { transform: translateY(-14px) rotate(3deg); }
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
 }
 
-/* Hero mascot */
+/* Hero mascot — small, bottom-right of phone mockup */
 .hero-mascot {
   position: absolute;
-  bottom: -20px;
-  left: -40px;
-  width: 220px;
-  filter: drop-shadow(0 12px 32px rgba(28,176,246,0.25));
-  animation: mascot-float 4s ease-in-out infinite;
+  bottom: 20px;
+  right: -30px;
+  width: 130px;
+  filter: drop-shadow(0 8px 20px rgba(28,176,246,0.3));
+  animation: mascot-float 3.5s ease-in-out infinite;
   pointer-events: none;
-  z-index: 2;
+  z-index: 3;
 }
 
 /* How it works mascot */
 .how-mascot-wrap {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: -10px;
-  position: relative;
+  align-items: flex-end;
+  margin-bottom: 12px;
 }
 .how-mascot {
-  width: 140px;
-  filter: drop-shadow(0 8px 20px rgba(28,176,246,0.2));
-  animation: mascot-float 4s ease-in-out infinite;
-  animation-delay: 0.5s;
+  width: 90px;
+  filter: drop-shadow(0 6px 14px rgba(28,176,246,0.2));
+  animation: mascot-float 3.5s ease-in-out infinite;
+  animation-delay: 0.8s;
 }
 .how-mascot-bubble {
   background: white;
   border: 2px solid var(--green);
-  border-radius: 20px 20px 20px 4px;
-  padding: 10px 16px;
-  font-size: 14px;
-  font-weight: 600;
+  border-radius: 16px 16px 4px 16px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 700;
   color: var(--text);
   font-family: 'Nunito', sans-serif;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-  margin-bottom: 8px;
-  max-width: 220px;
-  text-align: center;
-  position: relative;
+  box-shadow: var(--shadow);
+  margin-bottom: 6px;
+  white-space: nowrap;
 }
 
 /* Final CTA mascot */
@@ -930,22 +927,25 @@ body {
 }
 .final-cta-mascot {
   position: absolute;
-  right: -20px;
+  right: 40px;
   bottom: 0;
-  width: 280px;
-  filter: drop-shadow(0 16px 40px rgba(0,0,0,0.2));
-  animation: mascot-float 4s ease-in-out infinite;
-  animation-delay: 1s;
+  width: 160px;
+  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.25));
+  animation: mascot-float 3.5s ease-in-out infinite;
+  animation-delay: 0.4s;
   pointer-events: none;
-  opacity: 0.92;
 }
 
+@media (max-width: 1100px) {
+  .final-cta-mascot { right: 16px; width: 130px; }
+}
 @media (max-width: 900px) {
-  .hero-mascot { width: 160px; left: -20px; }
-  .final-cta-mascot { width: 180px; right: -10px; opacity: 0.7; }
+  .hero-mascot { width: 100px; right: -16px; }
+  .final-cta-mascot { width: 110px; opacity: 0.8; }
 }
 @media (max-width: 640px) {
   .hero-mascot { display: none; }
-  .how-mascot { width: 110px; }
-  .final-cta-mascot { width: 130px; opacity: 0.5; }
+  .how-mascot { width: 70px; }
+  .how-mascot-bubble { font-size: 12px; }
+  .final-cta-mascot { display: none; }
 }
