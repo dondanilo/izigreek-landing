@@ -898,33 +898,29 @@ body {
   flex-direction: column;
   gap: 20px;
 }
-.contact-field { position: relative; }
+.contact-field { display: flex; flex-direction: column; gap: 6px; }
+.contact-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
 .contact-input {
   width: 100%;
-  padding: 16px 16px 6px;
+  padding: 14px 16px;
   border: 1.5px solid var(--gray);
   border-radius: 12px;
   font-size: 15px;
   font-family: 'Inter', sans-serif;
   color: var(--text);
-  background: var(--bg);
+  background: white;
   outline: none;
   transition: border-color 0.2s;
   box-sizing: border-box;
 }
-.contact-input:focus { border-color: var(--green); background: white; }
-.contact-textarea { resize: none; padding-top: 20px; }
-.contact-label {
-  position: absolute;
-  left: 16px;
-  top: 12px;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--text-light);
-  pointer-events: none;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
+.contact-input:focus { border-color: var(--green); }
+.contact-textarea { resize: none; }
 .contact-submit {
   width: 100%;
   padding: 16px;
