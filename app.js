@@ -63,6 +63,34 @@ async function submitContactForm() {
 }
 
 // ============================================================
+// ECOMMERCE TRACKING (Yandex Metrika)
+// ============================================================
+const CHECKOUT_PRODUCTS = {
+  'a889f6e0-005e-43c3-a843-e4d25aa47bdd': { id: 'monthly', name: 'Помесячная подписка', price: 8.99 },
+  '58bb7cae-d33a-4ecf-9cd8-b56ac6afc8e9': { id: 'annual',  name: 'Годовая подписка',   price: 59.88 }
+};
+
+document.addEventListener('click', function(e) {
+  const link = e.target.closest('a[href*="lemonsqueezy.com/checkout"]');
+  if (!link) return;
+  const uuid = (link.href.match(/buy\/([a-f0-9-]+)/) || [])[1];
+  const product = CHECKOUT_PRODUCTS[uuid];
+  if (!product) return;
+
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    ecommerce: {
+      currencyCode: 'EUR',
+      add: { products: [{ id: product.id, name: product.name, price: product.price, quantity: 1 }] }
+    }
+  });
+
+  if (typeof ym !== 'undefined') {
+    ym(108299434, 'reachGoal', 'checkout_click', { product: product.id });
+  }
+});
+
+// ============================================================
 // FAQ ACCORDION
 // ============================================================
 function toggleFaq(btn) {
