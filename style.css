@@ -660,6 +660,70 @@ body {
 }
 .review-loc { font-size: 12px; color: var(--text-light); font-weight: 600; margin-top: 2px; }
 
+/* ============================================================ PWA */
+.pwa-section { background: var(--bg); padding: 80px 24px; }
+.pwa-inner { max-width: 860px; margin: 0 auto; text-align: center; }
+
+.pwa-subtitle {
+  font-size: 17px; color: var(--text-light); line-height: 1.7;
+  max-width: 620px; margin: 0 auto 48px;
+}
+
+.pwa-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.pwa-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+
+.pwa-card-header {
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--gray);
+}
+.pwa-card-icon { font-size: 24px; }
+.pwa-card-title { font-size: 17px; font-weight: 800; color: var(--text); }
+.pwa-card-hint {
+  font-size: 12px; color: var(--text-light);
+  background: var(--bg); border-radius: 100px;
+  padding: 3px 10px; font-weight: 600; margin-left: auto;
+}
+
+.pwa-steps { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+
+.pwa-step {
+  display: flex; align-items: flex-start; gap: 12px;
+  font-size: 14px; color: var(--text); line-height: 1.5;
+}
+.pwa-step-num {
+  min-width: 26px; height: 26px;
+  background: var(--green-light); color: var(--green-dark);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 13px;
+}
+
+.pwa-note {
+  font-size: 14px; color: var(--text-light);
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  box-shadow: var(--shadow);
+  display: inline-block;
+}
+
+@media (max-width: 640px) {
+  .pwa-cards { grid-template-columns: 1fr; }
+}
+
 /* ============================================================ PRICING */
 .pricing { background: var(--white); }
 
