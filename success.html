@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оплата прошла успешно — IziGreek</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇬🇷</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green: #58CC02;
+      --green-dark: #46A302;
+      --green-light: #E9F9D9;
+      --text: #1A1A2E;
+      --text-light: #6B7280;
+      --white: #FFFFFF;
+      --bg: #F8F9FA;
+      --radius: 16px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.08);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 48px 40px;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .success-icon {
+      width: 80px;
+      height: 80px;
+      background: var(--green-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      font-size: 36px;
+    }
+
+    .logo {
+      font-family: 'Nunito', sans-serif;
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--text);
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+
+    h1 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--text);
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      color: var(--text-light);
+      margin-bottom: 36px;
+      line-height: 1.6;
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 36px;
+      text-align: left;
+    }
+
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: var(--bg);
+      border-radius: var(--radius);
+      padding: 16px;
+    }
+
+    .step-num {
+      width: 36px;
+      height: 36px;
+      min-width: 36px;
+      background: var(--green);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 15px;
+    }
+
+    .step-body strong {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+
+    .step-body span {
+      font-size: 13px;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    .btn-primary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 16px 24px;
+      background: var(--green);
+      color: white;
+      border-radius: 12px;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.1s;
+      margin-bottom: 12px;
+    }
+
+    .btn-primary:hover { background: var(--green-dark); }
+    .btn-primary:active { transform: scale(0.98); }
+
+    .hint {
+      font-size: 12px;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    .hint a {
+      color: var(--green-dark);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .divider {
+      height: 1px;
+      background: #E5E7EB;
+      margin: 28px 0;
+    }
+
+    .faq-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-light);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 14px;
+    }
+
+    .faq-item {
+      text-align: left;
+      margin-bottom: 12px;
+    }
+
+    .faq-q {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 3px;
+    }
+
+    .faq-a {
+      font-size: 13px;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    @media (max-width: 480px) {
+      .card { padding: 32px 24px; }
+      h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <a href="https://izigreek.com" class="logo">
+      🇬🇷 IziGreek
+    </a>
+
+    <div class="success-icon">✅</div>
+
+    <h1>Оплата прошла успешно!</h1>
+    <p class="subtitle">Подписка активирована. Теперь нужно войти в кабинет — это займёт 30 секунд.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>Перейдите в кабинет</strong>
+          <span>Нажмите кнопку ниже — откроется приложение IziGreek</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Войдите через Google</strong>
+          <span>Используйте тот же email, которым оплачивали подписку</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>Начинайте учить греческий</strong>
+          <span>Полный доступ сразу после входа — уроки, сценарии, словарь</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://cabinet.izigreek.com" class="btn-primary">
+      Открыть кабинет →
+    </a>
+
+    <p class="hint">
+      Проблемы со входом? Напишите нам:<br>
+      <a href="mailto:support@izigreek.com">support@izigreek.com</a>
+    </p>
+
+    <div class="divider"></div>
+
+    <div class="faq-title">Частые вопросы</div>
+
+    <div class="faq-item">
+      <div class="faq-q">Подписка не активировалась после входа?</div>
+      <div class="faq-a">Убедитесь, что вошли через Google с тем же email, которым оплачивали. Активация занимает до 1 минуты.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Как отменить подписку?</div>
+      <div class="faq-a">В любой момент через личный кабинет LemonSqueezy — ссылка в письме об оплате.</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
