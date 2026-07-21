@@ -1,21 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <defs>
-    <clipPath id="rounded">
-      <rect width="512" height="512" rx="96"/>
-    </clipPath>
-  </defs>
-  <!-- Greek flag stripes: 9 stripes alternating blue and white -->
-  <g clip-path="url(#rounded)">
-    <rect y="0"   width="512" height="57" fill="#0D5EAF"/>
-    <rect y="57"  width="512" height="57" fill="#ffffff"/>
-    <rect y="114" width="512" height="57" fill="#0D5EAF"/>
-    <rect y="171" width="512" height="57" fill="#ffffff"/>
-    <rect y="228" width="512" height="57" fill="#0D5EAF"/>
-    <rect y="285" width="512" height="57" fill="#ffffff"/>
-    <rect y="342" width="512" height="57" fill="#0D5EAF"/>
-    <rect y="399" width="512" height="57" fill="#ffffff"/>
-    <rect y="456" width="512" height="56" fill="#0D5EAF"/>
-  </g>
-  <!-- White letter G -->
-  <text x="256" y="370" font-family="Arial, sans-serif" font-weight="700" font-size="320" text-anchor="middle" fill="#ffffff" stroke="#0D5EAF" stroke-width="8">G</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100"><svg width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <rect width="100" height="100" fill="#0D5EAF"/>
+      <g fill="#fff">
+        <rect y="11.11" width="100" height="11.11"/><rect y="33.33" width="100" height="11.11"/>
+        <rect y="55.55" width="100" height="11.11"/><rect y="77.77" width="100" height="11.11"/>
+      </g>
+      <rect width="55.55" height="55.55" fill="#0D5EAF"/>
+      <g fill="#fff">
+        <rect x="22.22" width="11.11" height="55.55"/><rect y="22.22" width="55.55" height="11.11"/>
+      </g></svg></svg>
