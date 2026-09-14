@@ -411,5 +411,26 @@
   <p style="margin-top:12px;"><a href="/blog/" style="color:#aaa;">← Все статьи блога</a> · <a href="https://izigreek.com" style="color:#aaa;">Главная</a></p>
 </footer>
 
+  <!-- Meta Pixel — deferred -->
+  <script>
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init','1617979786153330');
+      fbq('track','PageView');
+    }, 2000);
+  });
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest && e.target.closest('a[href*="lemonsqueezy.com/checkout"]');
+    if (a && window.fbq) fbq('track', 'InitiateCheckout');
+  });
+  </script>
 </body>
 </html>
